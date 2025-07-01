@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preserve-Ce | Meio Ambiente Sustentável</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo"><a href="index.html">Preserve-Ce</a></h1>
+      <button class="nav-toggle" aria-label="Abrir menu">☰</button>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#desafios">Desafios</a></li>
+          <li><a href="#acoes">Ações</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    
+    <section id="sobre" class="section container" aria-labelledby="sobre-title">
+      <h2 id="sobre-title" class="section-title">Sobre</h2>
+      <p>O Preserve-Ce é um movimento colaborativo que visa engajar cidadãos, empresas e governo na proteção do meio ambiente no Ceará. Com informações, projetos e voluntariado, promovemos práticas sustentáveis.</p>
+    </section>
+
+    <section id="desafios" class="section container" aria-labelledby="desafios-title">
+      <h2 id="desafios-title" class="section-title">Desafios</h2>
+      <ul class="list-icons">
+        <li>Desmatamento e perda de biodiversidade</li>
+        <li>Escassez e contaminação da água</li>
+        <li>Resíduos urbanos e industriais</li>
+        <li>Dependência de combustíveis fósseis</li>
+        <li>Falta de educação ambiental</li>
+      </ul>
+    </section>
+
+    <section id="acoes" class="section container" aria-labelledby="acoes-title">
+      <h2 id="acoes-title" class="section-title">Nossas Ações</h2>
+      <div class="grid-container">
+        <article class="grid-item item-reflo">
+          <h3>Reflorestamento</h3>
+          <p>Restauramos matas nativas com mudas do cerrado e caatinga.</p>
+          <a href="reflo.html" class="btn btn-secondary">Detalhes</a>
+        </article>
+        <article class="grid-item item-cons">
+          <h3>Conservação da Água</h3>
+          <p>Campanhas e tecnologias para uso eficiente da água.</p>
+          <a href="cons.html" class="btn btn-secondary">Detalhes</a>
+        </article>
+        <article class="grid-item item-ed">
+          <h3>Educação Ambiental</h3>
+          <p>Palestras, workshops e materiais didáticos para todas as idades.</p>
+          <a href="ed.html" class="btn btn-secondary">Detalhes</a>
+        </article>
+        <article class="grid-item item-red">
+          <h3>Redução de Resíduos</h3>
+          <p>Incentivamos economia circular e compostagem comunitária.</p>
+          <a href="red.html" class="btn btn-secondary">Detalhes</a>
+        </article>
+        <article class="grid-item item-reno">
+          <h3>Energias Renováveis</h3>
+          <p>Projetos de energia solar e eólica para comunidades rurais.</p>
+          <a href="reno.html" class="btn btn-secondary">Detalhes</a>
+        </article>
+        <article class="grid-item item-prot">
+          <h3>Proteção da Fauna</h3>
+          <p>Monitoramos espécies ameaçadas e combatemos o tráfico ilegal.</p>
+          <a href="prot.html" class="btn btn-secondary">Detalhes</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; Preserve-Ce.</p>
+      <p><a href="#sobre">Voltar ao topo</a></p>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(link => link.addEventListener('click', e => { e.preventDefault(); document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' }); }));
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>
